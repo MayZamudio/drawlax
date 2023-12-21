@@ -1,0 +1,63 @@
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.full-width-app-bar {
+  width: 100%;
+}
+
+.tool-icons {
+  color: #343330;
+}
+/* #004d40 is darker and color of switch */
+#slider-color {
+  color: #026e78;
+}
+/* Home Gradient Background 
+Source: https://www.getisotope.com/post/react-gradient-background
+*/
+.gradient_background {
+  background: linear-gradient(180deg, #edf5fc, #ffe0de);
+  height: 100vh;
+  width: 100vw;
+}
+/* Positioning the button over image logo:
+ https://stackoverflow.com/questions/68725598/how-to-position-a-button-over-an-image-in-css#:~:text=Make%20your%20img%20position%20absolute,on%20top%20of%20the%20image. */
+.wrapper {
+  position: relative;
+}
+.myLayer {
+  position: absolute; /* becomes a layer */
+  left: 40%; /* relative to its parent wrapper */
+  top: 65%; /* relative to its parent wrapper */
+  z-index: 2;
+  font-size: 20px;
+}
